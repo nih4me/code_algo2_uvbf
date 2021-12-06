@@ -1,0 +1,18 @@
+Variables: 
+    Tab[N]: tableau de taille N
+    X: valeur que vous recherchez
+
+/***
+Recherche sequentielle dans un tableau quelquonque
+Principe :  on effectue une recherche séquentielle jusqu'à ce qu'on
+                - trouve l'élément recherché;
+	                OU
+                - atteigne la fin du tableau.
+***/
+
+// -1 : valeur non trouvée
+procedure recherche_seq(tab[N], X): entier
+    pour i allant de 1 à N faire
+        si tab[i] == X alors
+            retourner i
+    retourner -1
